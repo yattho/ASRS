@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+	<meta charset="UTF-8">
+	<title>http://www.warehouse.co.kr</title>
+
+<style rel="stylesheet">
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f8f8f8;
+}
+body .container {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  height: 700px;
+  margin: 80px auto 0;
+  background-color: #ffffff;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+}
+body .container .half {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 58px 40px 0;
+}
+body .container .half.bg {
+  background-image: url("https://ifh.cc/g/tphzpZ.png");
+  background-size: 60%;
+  margin-top : 150px ;
+  background-repeat: no-repeat;
+}
+body .container h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 23px;
+  text-align: center;
+  text-indent: 6px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #263238;
+}
+body .container .tabs {
+  width: 100%;
+  margin-bottom: 29px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+
+
+
+
+
+
+
+body .container .content form {
+  position: relative;
+  height: 287px;
+}
+body .container .content label:first-of-type, body .container .content input:first-of-type, body .container .content .more:first-of-type {
+  -moz-animation: slideIn 0.4s cubic-bezier(0.37, 0.82, 0.2, 1);
+  -webkit-animation: slideIn 0.4s cubic-bezier(0.37, 0.82, 0.2, 1);
+  animation: slideIn 0.4s cubic-bezier(0.37, 0.82, 0.2, 1);
+}
+body .container .content label:nth-of-type(2), body .container .content input:nth-of-type(2), body .container .content .more:nth-of-type(2) {
+  -moz-animation: slideIn 0.5s cubic-bezier(0.37, 0.82, 0.2, 1);
+  -webkit-animation: slideIn 0.5s cubic-bezier(0.37, 0.82, 0.2, 1);
+  animation: slideIn 0.5s cubic-bezier(0.37, 0.82, 0.2, 1);
+}
+body .container .content label:nth-of-type(3), body .container .content input:nth-of-type(3), body .container .content .more:nth-of-type(3) {
+  -moz-animation: slideIn 0.6s cubic-bezier(0.37, 0.82, 0.2, 1);
+  -webkit-animation: slideIn 0.6s cubic-bezier(0.37, 0.82, 0.2, 1);
+  animation: slideIn 0.6s cubic-bezier(0.37, 0.82, 0.2, 1);
+}
+body .container .content label {
+  font-size: 12px;
+  color: #263238;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+body .container .content label:not([for='remember']) {
+  display: none;
+}
+body .container .content input.inpt {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  height: 42px;
+  margin-bottom: 12px;
+  padding: 16px 13px;
+  color: #999999;
+  border: 1px solid #d9d9d9;
+  background: transparent;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+body .container .content input.inpt::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #999999;
+  font-family: 'Lato', sans-serif;
+}
+body .container .content input.inpt:-moz-placeholder {
+  font-size: 14px;
+  color: #999999;
+  font-family: 'Lato', sans-serif;
+}
+body .container .content input.inpt::-moz-placeholder {
+  font-size: 14px;
+  color: #999999;
+  font-family: 'Lato', sans-serif;
+}
+body .container .content input.inpt:-ms-input-placeholder {
+  font-size: 14px;
+  color: #999999;
+  font-family: 'Lato', sans-serif;
+}
+body .container .content input.inpt:focus {
+  border-color: #999999;
+}
+body .container .content input:focus {
+  outline: none;
+}
+body .container .content .aa-cont {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+input[type="radio"] {display: none;}
+input[type="radio"] + label {display:inline-block;padding:20px;color:#999;font-size:14px;cursor:pointer;}
+input[type="radio"]:checked + label {color:#000;}
+
+.conbox{width:500px;height:600px;background:#aaa;margin:0 auto;display:none;}
+input[id="tab01"]:checked ~ .con1{display:block;}
+input[id="tab02"]:checked ~ .con2{display:block;}
+
+</style>
+</head>
+<body>
+
+<section class="container">
+  <article class="half">
+    <h1>관리자</h1>
+    <div class="tabs">
+
+
+
+      <div class="tab_content">
+          <input type="radio" id="tab01" name="tabmenu">
+          <label for="tab01" href="#aa">주문자 정보
+          <input type="radio" id="tab02"  name="tabmenu">
+          <label for="tab02"><a href="11live.html">실시간 정보</label></a></label>
+     </div> 
+
+      <div class="aa-cont cont">      
+      <div class="conbox con1" id="tab01">주문자 정보</div>
+      <div class="conbox con2" id="tab01">적재상황</div>
+      
+    </div> 
+
+
+  </article>
+    <div class="half bg"></div>  
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+   <script type="text/javascript">
+    $('.tabs .tab').click(function(){
+        if ($(this).hasClass('signin')) {
+            $('.tabs .tab').removeClass('active');
+            $(this).addClass('active');
+            $('.cont').hide();
+            $('.signin-cont').show();
+        } 
+        if ($(this).hasClass('signup')) {
+            $('.tabs .tab').removeClass('active');
+            $(this).addClass('active');
+            $('.cont').hide();
+            $('.signup-cont').show();
+        }
+    });
+
+</script>
+</body>
+</html>
